@@ -60,10 +60,8 @@ function countEvenNumbers(arrayOfNumbers) {
  */
 function celsiusToFahrenheit(arrayOfNumbers) {
     let convertedArray = arrayOfNumbers.map((i) => {
-      if (typeof i == 'number') {
-        i = Math.trunc(i * (9/5) + 32);
-        return i;
-      }
+      i = Math.trunc(i * (9/5) + 32);
+      return i;
     })
   return convertedArray;
 }
