@@ -4,7 +4,6 @@
  * @returns number the sum of the numbers
  */
 function sumOfNumbers(arrayOfNumbers) {
-  let i = arrayOfNumbers.length;
   let sum = 0;
   for(i in arrayOfNumbers) {
     if (typeof arrayOfNumbers[i] == 'number') {
@@ -12,4 +11,14 @@ function sumOfNumbers(arrayOfNumbers) {
     } else continue;
   }
     return sum;
+}
+
+function countEvenNumbers(arrayOfNumbers) {
+  let count = 0;
+  for(i in arrayOfNumbers) {
+    if (typeof arrayOfNumbers[i] == 'number' && arrayOfNumbers[i] % 2 == 0) 
+      count++;
+    else continue;
+  }
+  return count;
 }

@@ -35,9 +35,15 @@ function sumOfNumbers(arrayOfNumbers) {
  * @returns number the count of even numbers
  */
 function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+  let count = 0;
+  for(i in arrayOfNumbers) {
+    if (typeof arrayOfNumbers[i] == 'number' && arrayOfNumbers[i] % 2 == 0) 
+      count++;
+    else continue;
+  }
+  return count;
 }
-// assignment.countEvenNumbers = countEvenNumbers;
+ assignment.countEvenNumbers = countEvenNumbers;
 
 /**
  * Challenge - 3
